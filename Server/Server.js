@@ -3,6 +3,7 @@ import "dotenv/config";
 import cors from "cors";
 import connectDB from "./Configs/db.js";
 import { clerkMiddleware } from '@clerk/express'
+import clerkWebhooks from "./Controllers/clerkwebhooks.js";
  connectDB()
 const app = express();
 app.use(cors()); // Enable Cross-Origin Resource Sharing
